@@ -1,0 +1,51 @@
+/* 给整个页面设置背景图片 */
+body{
+    /* no-repeat的意思是图片拉伸平铺，不要叠加多个 */
+    background: url(../images/bg.jpg) no-repeat;
+    /* 设置背景图片大小为100%，要不图片过大 */
+    background-size: 100%;
+}
+
+.container{
+    /* background: orange; */
+    width: 985px;
+    height: 552px;
+    /* 设置边框具体上下元素100px，左右居中 */
+    margin: 100px auto;
+    /* 设置container为相对定位 */
+    position: relative;  
+}
+
+.row{
+    /* 设置成弹性容器 */
+    display: flex;
+    /* 对齐方式：两端对齐 */
+    justify-content: space-between;
+
+}
+
+.item{
+    /* 设置不透明度为50% */
+    opacity: 50%;
+}
+
+.current{
+    /* 设置不透明度为1 */
+    opacity: 1;
+}
+
+.btn{
+    /* 设置背景图片 */
+    background: url(../images/btn_bg.jpg) no-repeat;
+    width: 200px;
+    height: 68px;
+    color: white;  /* 文字颜色 */
+    font-size: 20px;  /* 文字大小 */
+    text-align: center;
+    line-height: 68px;
+    cursor: pointer;  /* 更改鼠标形状为手的形状 */
+    position: absolute;  /* 设置btn按钮为绝对定位 */
+    left: 50%;  /* 距离容器左边50% */
+    top: 50%;  /* 距离容器上面50% */
+    transform: translate(-50%,-50%);  /* 往左往上移自身尺寸的50% */
+}
