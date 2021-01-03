@@ -1,0 +1,64 @@
+/*------------------------路径层---------------------------*/
+.path-leave {
+    height: 50px;
+    /*background-color: pink;*/
+}
+.path-item {
+    color: #333333;
+    font-size: 13px;
+}
+/*------------------------内容层---------------------------*/
+.content-leave {
+    /*margin-top: 30px;*/
+    /*height: 800px;*/
+    /*background-color: white;*/
+}
+.content-left {
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+.content-right {
+    width: 800px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+.content-left-title {
+    height: 60px;
+    color: white;
+    padding-left: 10px;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(160,16,15,0.8);
+}
+.content-left-item {
+    height: 50px;
+    margin-top: 1px;
+    color: #333333;
+    padding-left: 10px;
+    cursor: pointer;
+    /*background-color: pink;*/
+}
+.content-left-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+.content-right-up {
+    height: 106px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(160,16,15,0.8);
+    /*background-color: brown;*/
+}
+.content-up-title {
+    height: 55px;
+    color: white;
+    font-size: 30px;
+    /*background-color: red;*/
+}
+.content-right-down {
+    /*height: 312px;*/
+    padding: 20px 17px;
+    box-sizing: border-box;
+    /*background-color: yellow;*/
+}

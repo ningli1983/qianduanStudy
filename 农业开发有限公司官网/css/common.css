@@ -1,0 +1,264 @@
+/*------------------------公共样式表----------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    text-indent: 16px;
+    font-size: 15px;
+    color: #333333;
+}
+.center-all {
+    display: flex;  /*弹性布局*/
+    justify-content: center; /*容器里面的item居中对齐*/
+    align-items: center; /*交叉轴中点对齐*/
+}
+.center-align {
+    display: flex;
+    align-items: center;
+}
+.center-justify {
+    display: flex;
+    justify-content: center;
+}
+.latitude-spacearound { /*设置横向元素等间隔排列*/
+    display: flex;  /*弹性布局*/
+    align-items: center; /*交叉轴的中点对齐*/
+    justify-content: space-around; /*每个项目两侧的间隔相等对齐*/
+}
+.latitude-spacebetween { /*设置横向元素等间隔排列*/
+    display: flex;  /*弹性布局*/
+    align-items: center;  /*交叉轴的中点对齐*/
+    justify-content: space-between; /*两端对齐，项目之间的间隔都相等。*/
+}
+.longitude {
+    display: flex;
+    flex-direction: column;
+}
+.fixedwidth {
+    width: 1349px;
+    margin: 0 auto;
+    padding: 0 6%;
+    box-sizing: border-box;
+}
+/*百分比式布局栏*/
+.fluidwidth {
+    width: 100%;  /*div宽度和父div相同*/
+    box-sizing: border-box;/*设置border-box后 width=border+padding+内容的width*/
+}
+/*------------------------本网页公共样式----------------------------*/
+.containerwidth {
+    width: 1100px;  /*设置页面容器宽度为1100像素*/
+    margin: 0 auto; /*设置margin的上下和左右距离*/
+}
+.more-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    background-color: #FF9900;
+    color: white;
+    cursor: pointer;
+}
+/*------------------------页面开始层---------------------------*/
+.pagestart-leave {    /*开始层占用的总div设置*/
+    height: 110px;   /*开始div的高度设置为110px*/
+    /* background-color: blue; */
+}
+.pagestart-left {   /*设置开始div中左侧div属性*/
+    height: 80px;
+    width: 480px;
+    /* background-color: brown; */
+}
+.pagestart-right {  /*设置开始div中右侧div属性*/
+    height: 70px;
+    width: 200px;
+    /* background-color: pink; */
+}
+.pagestart-right-up {  /*设置开始div中右上div的属性*/
+    height: 35px;
+    /* background-color: green; */
+}
+.pagestart-right-down {  /*设置开始div中右上div的属性*/
+    height: 35px;
+    /* background-color: red; */
+}
+.pagestart-p {
+    float: left;  /*段落向左浮动*/
+    font-size: 22px;
+    font-weight: bold;
+    text-indent: 0px;  /*缩进段落的第一行0像素*/
+}
+/*------------------------导航栏层---------------------------*/
+.nav-leave {   /*导航层占用的总div设置*/
+    height: 50px;
+    padding-top: 10px; /*上内边宽度10px */
+    /* margin-top: 5px;   margin只的是边框以外和其他div的距离 */
+    background: url(../images/nav.jpg) no-repeat;
+    /* background: rgb(58, 67, 196); */
+}
+.nav-container { /*导航层容器div*/
+    height: 50px;
+    margin: 0 auto;
+    /* background: purple; */
+}
+/*浏览器宽度小于1100时使用以下设置*/
+@media screen and (max-width: 1100px) { 
+    .nav-leave {
+        background: none;
+    }
+    .nav-container {
+        background: url(../images/nav.jpg) no-repeat;
+    }
+}
+.nav-ul {
+    height: 40px;
+    list-style-type:none; /*设置列表项标记的类型为无标记 */
+    /* list-style-type: square; 设置列表项标记为实心方块 */
+}
+.nav-li {   /*导航栏鼠标没hover时的*/
+    float: left;
+    width: 121px;
+    height: 39px;
+    text-align: center;
+}
+.nav-a {
+    display: block; /*设置为块级元素,通过设置高度、宽度、内外边距等属性*/
+    color: #E8D296;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-li:hover{  /*选择鼠标移到元素上的样式*/
+    background: url(../images/nav-hover.jpg) no-repeat;
+}
+.nav-li:hover > .nav-a{
+    color: #A0100F;
+    font-weight: bold;
+}
+.nav-dropdown {
+    position: relative; /*相对定位*/
+    z-index: 2; /*z-index 属性指定一个元素的堆叠顺序*/
+}
+.nav-dropdown-content {
+    display: none;  /*设置元素不展示*/
+    position: absolute; /*绝对定位*/
+    top: 40px;
+    border-top: 1px solid transparent; /*设置上边框的样式*/
+}
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+    background-color: #A0100F;
+}
+/*------------------------轮播图层---------------------------*/
+.lunbo-leave {
+    
+}
+.swiper-container1 {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 1100px;
+    /*height: 700px;*/
+    /* --swiper-theme-color: #ff6600;设置Swiper风格 */
+    --swiper-navigation-color: #00ff33;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px;/* 设置按钮大小 */ 
+}
+.swiper-button-hidden{  /*点击slide时显示/隐藏按钮，需配合navigation中的hideOnClick: true使用*/
+     opacity : 0; }
+
+.swiper-imagesize {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 1100px;
+    /*height: 700px;*/
+}
+.swiper-wrapper {
+    max-width: 1920px;
+    width: 100%;
+    min-width: 1100px;
+    /* height: 700px; */
+}
+.swiper-pagination-bullet-active {
+    background-color: #A0100F;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*------------------------页脚层---------------------------*/
+.footer-leave {
+    height: 250px;
+    background-color: #474747;
+    margin-top: 30px;
+}
+.footer-container {
+    height: 100%;
+    /*background-color: gray;*/
+}
+@media screen and (max-width: 1100px) {
+    .footer-leave {
+        background: none;
+    }
+    .footer-container {
+        background-color: #474747;
+    }
+}
+.footer-left {
+    height: 100%;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    /*background-color: pink;*/
+}
+.footer-right {
+    height: 100%;
+    width: 475px;
+    color: white;
+    font-size: 15px;
+    /*background-color: brown;*/
+}
+.footer-box {
+    padding-left: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    line-height: 36px;
+}
+/*------------------------页面结束层---------------------------*/
+.pageend-leave {
+    height: 50px;
+    background-color: #323232;
+}
+.pageend-container {
+    height: 100%;
+    /*background-color: orange;*/
+}
+@media screen and (max-width: 1100px) {
+    .pageend-leave {
+        background: none;
+    }
+    .pageend-container {
+        background-color: #323232;
+    }
+}
+.pageend-p {
+    float: right;
+    color: #999999;
+    font-size: 13px;
+    margin-top: 18px;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>益众源</title>  <!--网页标题-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">  <!--添加swiper轮播图控件-->
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css"> <!--添加animate动画效果控件-->
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- <style>
+        body{
+            background: url(./images/bkg.jpg) no-repeat;
+            background-size: 100% 100%;  /*横向和纵向100%拉伸满屏幕*/
+        };
+    </style> -->
+</head>
+<!-- <body> -->
+<body style="background: url(./images/bkg.jpg) repeat-y;">  <!--repeat-y表示body的背景图片以y抽方向重复-->
+<!--图片不重复，保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小 --> 
+<!-- <body style="background: url(./images/bkg.jpg) no-repeat; background-size: cover;">    -->
+    <!-- 页面开始层: 导航栏上面的部分 -->
+    <div class="pagestart-leave containerwidth latitude-spacebetween"> <!--定义开始div的宽度高度和布局方式-->
+        <div class="pagestart-left"> <!--定义开始div左侧块布局，放置公司名称-->
+            <img src="./images/logo.png" style="height: 100%;">  <!--放置公司名称的图片,img属于行内元素-->
+        </div>
+        <div class="pagestart-right">  <!--定义开始div右侧布局-->
+            <div class="pagestart-right-up fluidwidth"><p class="pagestart-p" style="color: #A0100F; margin-top: 5px;">24小时服务热线</p></div>
+            <!-- margin-top 设置一个p元素的上部边距 -->
+            <div class="pagestart-right-down fluidwidth"><p class="pagestart-p">0350-3322188</p></div>
+        </div>
+    </div>
+    <!-- 导航栏层 -->
+    <div class="nav-leave fluidwidth">   
+        <div class="nav-container containerwidth">
+            <ul class="nav-ul containerwidth latitude-spacearound">  <!--导航图标是用一组ul和li描述的，设定flex弹性布局-->
+                <!-- href="#"是指联接到当前页面 -->
+                <li class="nav-li center-all"><a href="#" class="nav-a">网站首页</a></li>
+                <li class="nav-li center-all nav-dropdown"><a href="#" class="nav-a">关于我们</a>
+                    <ul class="nav-dropdown-content"> <!--鼠标不经过隐藏，绝对布局-->
+                        <li class="nav-li center-all"><a href="#" class="nav-a">公司简介</a></li>
+                        <li class="nav-li center-all"><a href="#" class="nav-a">组织架构</a></li>
+                        <li class="nav-li center-all"><a href="#" class="nav-a">企业文化</a></li>
+                    </ul>
+                </li>
+                <li class="nav-li center-all"><a href="#" class="nav-a">最新资讯</a></li>
+                <li class="nav-li center-all"><a href="#" class="nav-a">产品展示</a></li>
+                <li class="nav-li center-all"><a href="#" class="nav-a">厂区实景</a></li>
+                <li class="nav-li center-all"><a href="#" class="nav-a">资质荣誉</a></li>
+                <li class="nav-li center-all"><a href="#" class="nav-a">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图层 -->
+    <div class="lunbo-leave fluidwidth">
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper"> <!--设置轮播图容器的div-->
+              <div class="swiper-slide"><img src="./images/lunbo-1.jpg" class="swiper-imagesize"></div>
+              <div class="swiper-slide"><img src="./images/lunbo-2.jpg" class="swiper-imagesize"></div>
+              <div class="swiper-slide"><img src="./images/lunbo-3.jpg" class="swiper-imagesize"></div>
+              <div class="swiper-slide"><img src="./images/lunbo-4.jpg" class="swiper-imagesize"></div>
+              <div class="swiper-slide"><img src="./images/lunbo-5.jpg" class="swiper-imagesize"></div>
+              <div class="swiper-slide"><img src="./images/lunbo-6.jpg" class="swiper-imagesize"></div>
+            </div>
+            <!-- Add Pagination 增加页码-->
+            <div class="swiper-pagination swiper-p1"></div> <!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+            <!-- 使用前进后退按钮来控制Swiper切换-->
+            <div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+            <div class="swiper-button-next"></div> <!-- swiper-button-white 白色,swiper-button-black 黑色 -->
+        </div>
+    </div>
+    <!-- 关于我们层 -->
+    <div class="aboutus-leave containerwidth">
+        <div class="aboutus-up fluidwidth center-align">关于我们</div>
+        <div class="aboutus-mid fluidwidth">ABOUT  OUR  COMPANY</div>
+        <div class="aboutus-down fluidwidth latitude-spacebetween" style="align-items: flex-start;">
+            <div class="aboutus-down-left">
+                <img src="./images/firm.png" style="height: 100%; width: 100%;">
+            </div>
+            <div class="aboutus-down-right">
+                <div class="aboutus-right-up fluidwidth">
+                    <p style="line-height: 23px;">山西益众源农业开发有限公司，坐落在“地肥水美五谷香”的山西省定襄县，厂址位于庄力园区。公司注册资金1000万元，主要从事小杂粮的生产、深加工、销售及其新产品研究开发，年产杂粮1800吨，产品方案为：年产精制小米900吨；年产杂粮预制食品100吨；年产精制四色豆300吨，其中绿豆100吨、红豆50吨，黑豆50吨、黄豆（大豆）100吨；年产杂粮石磨面粉500吨。 小米加工项目选用国内最先进的成套生产线设备，进行除尘、筛选、清洗、脱皮、脱粒、色选、抛光、包装等程序，机械并辅助人工操作，面粉是通过传统的石磨，低温加工而成 。整个生产过程保持各种杂粮原有营养成分，工艺完全达到国内先进水平。本产品销往全国各地，通过超市、电商、易物等逐步提高商品知名度，开拓市场跻身前列。公司本着“携手合作，共筑健康”的理念：携同事之手、携同仁之手、携农户之手、携客户之手；与友人合作，与友企合作，与各界合作，与世界合作；为全民健康饮食做出不懈努力。</p>
+                </div>
+                <div class="aboutus-right-down fluidwidth">
+                    <div class="more-btn center-all" style="width: 130px; font-size: 14px;">查看更多</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 展示层 -->
+    <div class="display-leave containerwidth latitude-spacebetween">
+        <div class="display-left">
+            <div class="display-left-left">PRODUCT<br><br>DISPLAY</div>
+            <div class="display-left-right">产品展示</div>
+        </div>
+        <div class="display-right">
+            <div class="display-right-up">
+                <div class="swiper-container swiper-container2">
+                    <div class="swiper-wrapper" style="width: 1024px; height: 185px;">
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/1.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">八宝礼盒8*袋</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/2.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">杂粮绿豆面</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/3.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">五谷面食礼盒</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/4.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">绿豆面手盘面</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/5.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">荞面猫耳朵</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/6.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">高粱面饸饹</div>
+                      </div>
+                      <div class="swiper-slide swiper-slide2">
+                        <img src="./images/7.jpg" class="swiper-imagesize2">
+                        <div class="product-desc center-all">玉米面饸饹</div>
+                      </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-pagination swiper-p2"></div> 
+                    <!-- 使用前进后退按钮来控制Swiper切换-->
+                    <div class="swiper-button-prev swiper-button-white swiper-button-hidden"></div> <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+                    <div class="swiper-button-next swiper-button-white swiper-button-hidden"></div> <!--右箭头。如果放置在swiper-container外面，需要自定义样式。 -->
+                 </div>
+            </div>
+            <div class="display-right-down">
+                <div class="more-btn center-all">查看更多</div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻层 -->
+    <div class="news-leave containerwidth">
+        <div class="news-up fluidwidth center-align">新闻中心</div>
+        <div class="news-mid1 fluidwidth">THE LATEST INFORMATION</div>
+        <div class="news-mid2 fluidwidth latitude-spacearound" style="flex-wrap: wrap;">
+            <div class="news-box latitude-spacebetween">
+                <div class="news-box-left">
+                    <img src="./images/news.jpg" style="height: 100%; width: 100%;">
+                </div>
+                <div class="news-box-right">
+                    <div class="news-box-up">
+                        <div class="news-box-title">黄米及其营养价值黄米及其营养价值黄米及其营养价值</div>
+                        <div class="news-box-date center-align">2017-8-13</div>
+                    </div>
+                    <div class="news-box-down">糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做</div>
+                </div>
+            </div>
+            <div class="news-box latitude-spacebetween">
+                <div class="news-box-left">
+                    <img src="./images/news.jpg" style="height: 100%; width: 100%;">
+                </div>
+                <div class="news-box-right">
+                    <div class="news-box-up">
+                        <div class="news-box-title">黄米及其营养价值黄米及其营养价值黄米及其营养价值</div>
+                        <div class="news-box-date center-align">2017-8-13</div>
+                    </div>
+                    <div class="news-box-down">糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做</div>
+                </div>
+            </div>
+            <div class="news-box latitude-spacebetween">
+                <div class="news-box-left">
+                    <img src="./images/news.jpg" style="height: 100%; width: 100%;">
+                </div>
+                <div class="news-box-right">
+                    <div class="news-box-up">
+                        <div class="news-box-title">黄米及其营养价值黄米及其营养价值黄米及其营养价值</div>
+                        <div class="news-box-date center-align">2017-8-13</div>
+                    </div>
+                    <div class="news-box-down">糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做</div>
+                </div>
+            </div>
+            <div class="news-box latitude-spacebetween">
+                <div class="news-box-left">
+                    <img src="./images/news.jpg" style="height: 100%; width: 100%;">
+                </div>
+                <div class="news-box-right">
+                    <div class="news-box-up">
+                        <div class="news-box-title">黄米及其营养价值黄米及其营养价值黄米及其营养价值</div>
+                        <div class="news-box-date center-align">2017-8-13</div>
+                    </div>
+                    <div class="news-box-down">糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做糜子脱壳之后称为黄米或大黄米　有粳糯之分，有的地方把糯性糜子称为黍，把粳性糜子称为稷，糯性黄米多作黄酒或米酒，或包粽子、做年糕，粳性黄米吃法与大米相同，多做</div>
+                </div>
+            </div>
+        </div>
+        <div class="news-down fluidwidth center-justify">
+            <div class="more-btn center-all" style="width: 130px; font-size: 14px;">查看更多</div>
+        </div>
+    </div>
+    <!-- 页脚层 -->
+    <div class="footer-leave fluidwidth">
+        <div class="footer-container containerwidth latitude-spacebetween">
+            <div class="footer-left footer-box">
+                山西益众源农业开发有限公司<br>
+                <div style="width: 150px; height: 150px; background-color: brown;">
+                    <img src="./images/logo-img.png" style="width: 100%; height: 100%;">
+                </div>
+                邮箱:yzynygs@126.com<br>
+            </div>
+            <div class="footer-right footer-box">
+                <p style="color: white; font-size: 20px; text-indent: 0px;">联系方式</p>
+                山西益众源农业开发有限公司<br>
+                地址：山西定襄庄力示范园区次一号路南端<br>
+                网址：http://www.sxyzyny.com<br>
+                邮箱：yzynygs@126.com<br>
+                传真：0350-3323188<br>
+            </div>
+        </div>
+    </div>
+    <!-- 页面结束层 -->
+    <div class="pageend-leave fluidwidth">
+        <div class="pageend-container containerwidth">
+            <p class="pageend-p">COPYRIGHT © 2008-2016 山西益众源农业开发有限公司 ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/product-swiper.js"></script> -->
+</body>
+</html>
